@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>updatedobsndi</Name>
+  <Repository>drewvpopc/updatedobsndi</Repository>
+  <Registry>https://hub.docker.com/r/drewvpopc/updatedobsndi/</Registry>
+  <Network>br0</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/drewvpopc/updatedobsndi/</Support>
+  <Project/>
+  <Overview>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5901]</WebUI>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams>--runtime=nvidia</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1630817734</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>br0</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/andrew.venenga/StreamingPCRecordings/</HostDir>
+      <ContainerDir>/mnt/mount</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>GPU-bf85faaf-aa76-fb8a-b5a8-389c5d7be8d6</Value>
+      <Name>NVIDIA_VISIBLE_DEVICES</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>all</Value>
+      <Name>NVIDIA_DRIVER_CAPABILITIES</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Nvidia GPU Device" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Container Variable: NVIDIA_VISIBLE_DEVICES" Type="Variable" Display="always" Required="false" Mask="false">GPU-bf85faaf-aa76-fb8a-b5a8-389c5d7be8d6</Config>
+  <Config Name="Nvidia Driver Capbilities" Target="NVIDIA_DRIVER_CAPABILITIES" Default="" Mode="" Description="Container Variable: NVIDIA_DRIVER_CAPABILITIES" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="StreamingPCtoStorage" Target="/mnt/mount" Default="" Mode="rw" Description="Container Path: /mnt/mount" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/andrew.venenga/StreamingPCRecordings/</Config>
